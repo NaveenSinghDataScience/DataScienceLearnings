@@ -1,0 +1,402 @@
+What is Tableau used for?
+
+'''
+Tableau is a powerful tool used for data analysis and visualization. Here are some of the main uses of Tableau:
+
+Business Intelligence: Tableau is often used as a Business Intelligence tool to help companies visualize and understand their data.
+
+Data Visualization: Tableau provides interactive data visualization views from the product. It allows the creation of amazing and interactive visualizations without coding.
+
+Data Collaboration: Tableau allows for the configuration and connection of various types of data sources. It also provides features to share work with other team members.
+
+Data Blending: Tableau can perform the data analysis process by reducing or summarizing the content or main and key important characteristics of the data sets into non-redundant information.
+
+Real-time Data Analysis: This tool enables easy analysis of real-time data. It can take in data and produce the required data visualization output in a very short time.
+
+Query Translation into Visualization: Tableau can translate queries into visualizations, making it easier to understand complex data.
+
+Supports Many Data Sources: There are different kinds of data sources, such as different types of data like Structured, Unstructured, and Semi-Structured Data. The different data sources can be from multiple types of databases like Oracle, MySQL, IBM DB2, MS SQL, MongoDB, Cassandra, Virtual databases, etc.
+
+Supports Multiple Database Features: Uses of Tableau supports multiple types of database features such as RDBMS, No SQL Databases, Object-oriented Databases, etc., where the data in a Relational Database Management System has structured data and No SQL and object-oriented databases have semi-structured and unstructured data such as JSON, text, or document files, etc.
+
+'''
+
+
+
+How do you create charts and graphs in Tableau?
+
+'''
+Creating charts and graphs in Tableau involves a few steps. Here’s a basic guide:
+
+Connect to the Data Source: You can connect to the data source you want to visualize.
+
+Choose the Chart Type: Tableau offers a variety of chart types, including bar charts, line charts, pie charts, scatter plots, and more. The chart type you choose depends on the data you’re working with and the insights you want to gain.
+
+Drag and Drop Fields: You create a chart by placing a dimension on the Rows shelf and a measure on the Columns shelf, or vice versa. For example, to create a bar chart that displays total sales over a four-year period, drag the Order Date dimension to Columns and drag the Sales measure to Rows.
+
+Customize the Chart: You can further customize your chart by dragging additional fields to the Marks card. For instance, you can drag the Ship Mode dimension to Color on the Marks card to show how different shipping modes have contributed to total sales over time.
+
+Filter Data: You can filter your data by dragging a dimension from the Data pane to the Filters shelf.
+
+Remember, these are just basic steps. Tableau is a powerful tool that offers many more features for creating complex visualizations
+
+'''
+
+
+
+What is a data source in Tableau?
+
+'''
+A Tableau data source is the link between your source data and Tableau. It is essentially the sum of your data (either as a live connection or an extract), the connection information, the names of tables or sheets containing data, and the customizations that you make on top of data to work with it in Tableau.
+
+Every time you use the “Connect to Data” menu, you create a Tableau Data Source. A Data Source describes the physical source of the data (file name + location or database connection), the table joins and all of the metadata (hierarchies, folders, aliases, names, and calculations).
+
+Tableau offers a myriad of data sources such as local text files, MS Excel, PDFs, JSON or databases and servers like Tableau Server, MySQL Server, Microsoft SQL Server, etc.
+
+Why create saved Data Sources? Connecting to your data and joining it correctly can take time, effort and knowledge of your data structure. By saving the Data Sources locally or publishing them to Tableau Server, you only have to put this effort in once, and your time can be spent analyzing the data in Tableau.
+
+'''
+
+
+
+What is a dashboard in Tableau?
+
+'''
+A dashboard in Tableau is a consolidated display of many worksheets and related information in a single place. It is a collection of several views, allowing you to compare a variety of data simultaneously. For example, if you have a set of views that you review every day, you can create a dashboard that displays all the views at once, rather than navigate to separate worksheets.
+
+A dashboard is intended to convey different, but related information in an easy-to-digest form. This often includes things like key performance indicators (KPIs) or other important business metrics that stakeholders need to see and understand at a glance. Dashboards are useful across different industries and verticals because they’re highly customizable. They can include data of all sorts with varying date ranges to help you understand: what happened, why it happened, what may happen, and what action you should take.
+
+And since dashboards use visualizations like tables, graphs, and charts, others who aren’t as close to the data can quickly and easily understand the story it tells or the insights it reveals. Dashboards are a type of data visualization, and often use common visualization tools such as graphs, charts, and tables.
+
+'''
+
+
+
+How can you filter data in Tableau?
+
+'''
+Filtering data in Tableau can be done in several ways:
+
+Extract filters: These are applied when you create an extract of your data. They determine what data is included in the extract.
+
+Data source filters: These are applied to all worksheets that use the same data source.
+
+Context filters: These create a temporary table that includes all values that are not filtered out by either the extract or data source filters.
+
+Dimension filters: These are applied to dimensions in your view.
+
+Measure filters: These are applied to measures in your view.
+
+You can also filter individual data points (marks), or a selection of data points from your view. For example, if you have a scatter plot with outliers, you can exclude them from the view so you can better focus on the rest of the data.
+
+In addition, you can select headers to filter them from your view. To filter entire rows or columns of data from your view, select the header in the view.
+
+Tableau Prep provides various options that you can use to filter your data. For example, use Keep Only or Exclude to do one-click filtering on a specific value for a field in a profile card, data grid or results card, or select from a variety of filter options for more complex filtering needs. You can also keep or remove entire fields.
+
+You can hide fields that don’t need cleaning, but you still want to include them in your flow. Data for those fields won’t be loaded until you either unhide the fields or run your flow to generate your output.
+
+'''
+
+
+
+
+What are dimensions and measures in Tableau?
+
+'''
+In Tableau, dimensions and measures are two types of data fields that you can use to build views of your data.
+
+Dimensions: These contain qualitative values such as names, dates, or geographical data. You can use dimensions to categorize, segment, and reveal the details in your data. Dimensions affect the level of detail in the view. They often produce headers when added to rows or columns.
+
+Measures: These contain numeric, quantitative values that you can measure. Measures are fields that can be aggregated in some way, such as a sum or an average. When you drag a measure into the view, Tableau applies an aggregation to that measure (by default). They typically produce axes when added to the view.
+
+Tableau represents data differently in the view depending on whether the field is discrete (blue), or continuous (green):
+
+Continuous fields (green): These are treated as an infinite range. Generally, continuous fields add axes to the view.
+Discrete fields (blue): These values are treated as finite. Generally, discrete fields add headers to the view.
+You can change some measures from continuous to discrete, but in general, you cannot change data roles for fields in cube data sources.
+
+'''
+
+
+
+
+
+What is the purpose of calculated fields in Tableau?
+
+'''
+Calculated fields in Tableau serve several purposes:
+
+Create New Data: Calculated fields allow you to create new data from data that already exists in your data source12. When you create a calculated field, you are essentially creating a new field (or column) in your data source, the values or members of which are determined by a calculation that you control.
+
+Data Segmentation: They can be used to segment data.
+
+Data Type Conversion: They can convert the data type of a field, such as converting a string to a date.
+
+Data Aggregation: They can aggregate data.
+
+Filter Results: They can filter results.
+
+Calculate Ratios: They can calculate ratios.
+
+Perform Complex Analysis: Calculations allow you to perform complex analyzes and add fields to your data source on your own and on the fly.
+
+Discover New Possibilities: These new fields can be used to examine data, experiment with ratios, create data comparisons, and discover new possibilities.
+
+The calculated field is saved to your data source in Tableau, and can be used to create more robust visualizations1. But don’t worry: your original data remains untouched.
+
+'''
+
+
+
+
+
+How can you share Tableau visualizations with others?
+
+'''
+There are several ways to share Tableau visualizations with others:
+
+Use Tableau Public:
+
+Select Server > Tableau Public > Save to Tableau Public.
+Enter your Tableau Public credentials in the dialog box.
+If you see a dialog box, open the Data Source page. Then in the top-right corner, change the Connection type from Live to Extract.
+For the second time, select Server > Tableau Public > Save to Tableau Public.
+After publishing, you can share your visualization by embedding it on a website, sharing it on social media, or emailing a link to the visualization.
+
+Use Tableau Server:
+
+Select Server > Publish Workbook or click Share on the toolbar.
+Enter the name of the server (or IP address) that you want to connect to in the dialog box and click Connect.
+In the Name field, enter a name for your workbook.
+To add extra security features to your workbook, go to Authentication and select Allow Refresh Access or Embed Password.
+Once you complete these steps, hit the Publish button.
+
+Export as a PDF:
+
+On the dashboard, go to File > Print to PDF.
+From the dialog box that pops up, set up the print range.
+Choose the paper size and orientation that best matches the data you want to print.
+Click OK, then choose the folder you want to save your PDF to and click Save.
+
+Please note that when you publish to Tableau Public, these views are publicly accessible. This means that you share your views as well as your underlying data with anyone with access to the internet. When sharing confidential information, consider using Tableau Server or Tableau Cloud.
+
+'''
+
+
+
+
+
+What is the difference between Tableau Desktop and Tableau Server?
+
+'''
+Tableau Desktop and Tableau Server are both products from Tableau, but they serve different purposes and have different functionalities:
+
+Tableau Desktop:
+
+It is a data visualization software that transforms a large amount of data (mostly statistical data) into interactive visual representations, such as graphs and charts.
+It instigates live visual analytics propelling unlimited data exploration thereby aiding corporates to make informed decisions by showcasing unforeseen business insights.
+Tableau Desktop can be used to create worksheets, dashboards, stories connecting to data sources which can be files or server.
+One can share their work locally by sending the workbook (twbx). But it is important to know that the recipient should have Tableau Desktop or Tableau Reader in their PC.
+By sharing it locally we would not be able to restrict the end user from making changes to the Workbook. This will end up in having multiple versions of the same report in different locations.
+
+Tableau desktop is best used for developers to build in reports to give insights to decision makers.
+
+Tableau Server:
+
+A Tableau Desktop provides the ability to create interactive workbooks and dashboards, the Tableau server allows the users to publish, share and administrate this Tableau Desktop content.
+A Tableau Server has an administrator who controls over the access to server content (that is, Tableau Desktop content published in the Tableau Server) to help protect sensitive data.
+A Tableau Server administrator can set user permissions on projects, workbooks, views, and data sources.
+Once the workbook is uploaded onto the server, the recipient need not have Tableau Server installed in their PC. All that they need is Login credentials.
+Tableau Admin can set permission for each user, whether they can view, make changes, edit etc. when you log on to the server and you have permission to edit then you will be able to make changes to the existing report using an Online Tableau Desktop tool.
+Tableau server best fits Decision makers to analyze their results.
+
+In summary, Tableau Desktop is primarily used for creating and designing reports and dashboards, while Tableau Server is used for sharing these reports and dashboards across an organization.
+
+'''
+
+
+
+
+What are some common file formats that Tableau can connect to?
+
+'''
+Tableau can connect to a variety of file formats. Here are some of the most common ones:
+
+Text files (.txt)
+CSV files (.csv)
+Tab-separated values (.tab, .tsv)
+Microsoft Access (2007 or later, Windows only)
+Microsoft Excel (2007 or later)
+OData
+PDF
+Spatial files (Esri Shapefiles, KML, GeoJSON, and MapInfo file types)
+Google Sheets
+JSON
+
+Please note that this is not an exhaustive list and Tableau’s ability to connect to data sources is continually expanding.
+
+'''
+
+
+
+
+
+Tableau History Questions:
+
+
+When was Tableau Software founded?
+
+'''
+Tableau Software was founded in 2003 in Mountain View, California.
+
+'''
+
+
+
+
+Who were the founders of Tableau?
+
+'''
+Tableau Software was founded by Christian Chabot, Chris Stolte, and Pat Hanrahan.
+
+'''
+
+
+
+
+Can you name one of the early versions of Tableau Desktop?
+
+'''
+One of the early versions of Tableau Desktop is Tableau Desktop 2018.3.
+
+'''
+
+
+
+
+What year did Tableau go public?
+
+'''
+Tableau Software went public on May 17, 2013.
+
+'''
+
+
+
+
+
+Which major tech company acquired Tableau in 2019?
+
+'''
+In 2019, Salesforce, the global leader in CRM, completed its acquisition of Tableau Software, bringing together the world’s #1 CRM with the world’s #1 analytics platform1. The acquisition was announced on June 10, 2019, and was completed on August 1, 2019.
+
+'''
+
+
+
+
+
+How has Tableau's software evolved since its inception?
+
+'''
+Tableau has evolved significantly since its inception. The company has brought exciting innovations to the landscape of business intelligence with every product release1. Here are some key events in Tableau’s history:
+
+Release v1.0 (April 2005): This was the first major release of Tableau.
+
+First Tableau Conference (2008): This event marked a significant milestone in Tableau’s history, bringing together users and enthusiasts from around the world.
+
+IPO (2013): Tableau went public, marking its growth and success in the data visualization industry.
+
+Adam Selipsky becoming CEO (2016): Leadership change brought new strategic directions for the company.
+
+Salesforce purchase (2019): Salesforce’s acquisition of Tableau was a major event that expanded Tableau’s reach and capabilities.
+
+Throughout these years, Tableau has released more than 40 versions, each introducing new features and improvements. The company’s commitment to innovation is evident in its history and continues to drive its evolution. The future of Tableau promises further advancements in data visualization and business intelligence.
+
+'''
+
+
+
+
+
+What was Tableau's initial mission or goal as a company?
+
+'''
+Tableau’s initial mission as a company was to help people see and understand data.
+This mission remains the same today. The company was founded with the goal of making databases and spreadsheets understandable to ordinary people.
+They aimed to create breakthrough products that would change the way people use data. Today, together with Salesforce, they are delivering a successful data experience for everyone—from the workforce of today to the change-makers of tomorrow.
+
+'''
+
+
+
+
+
+Can you mention a notable achievement or recognition received by Tableau?
+
+'''
+Tableau has received numerous awards and recognitions for its outstanding contributions to the field of data visualization and business intelligence. Here are a few notable ones:
+
+Gartner Magic Quadrant: Tableau has been named as a Leader in Gartner’s Magic Quadrant for Analytics & BI Platforms, recognized for vision and execution.
+
+Dresner Industry Excellence Award: Tableau is recognized as a Technology Leader and a Trust Leader in Business Intelligence, and has a perfect recommend score.
+
+Best in KLAS Data Visualization & Reporting: Tableau was recognized as a top performing Data Visualization & Reporting solution in KLAS’ annual ranking of the best Healthcare IT software & services.
+
+InfoTech BI Data Quadrant: Tableau received the Gold medal award for BI, along with a Top Rated Capability Award for Training, Usability, and Product Strategy in InfoTech’s 2021 BI Data Quadrant Rankings.
+
+SoftwareReviews Emotional Footprint: Tableau and Einstein Analytics (CRM Analytics) were both listed as Champions in SoftwareReviews’ Emotional Footprint Awards for BI in 2020.
+
+LinkedIn Top Companies: Tableau ranked in the top 25 on the 2022 LinkedIn Top Companies to grow a career in the Technology & Information industry in the U.S.
+
+Change the World: Tableau’s COVID-19 Data Hub was highlighted as part of Salesforce’s efforts to help businesses navigate the pandemic in Fortune’s 2020 Change the World list.
+
+World Changing Ideas: Tableau was named a finalist for Company of the Year in Fast Company’s 2020 World Changing Ideas Awards, while also featuring as a finalist in the ‘Politics and Policy’ and Honorable Mention in the ‘CSR’ categories.
+
+Data Management Insight Awards - USA: Tableau was named Best Data Analytics Provider and Best Data Visualization Provider in A-Team Group’s Data Management Insight Awards - USA 2022.
+
+Data Management Insight Awards - Europe: Tableau was recognized as Best Data Visualization Provider in A-Team Group’s Data Management Insight Awards - Europe 2022.
+
+These recognitions reflect Tableau’s commitment to providing innovative solutions that help people see and understand data.
+
+'''
+
+
+
+
+
+
+
+In what city was Tableau Software headquartered during its early years?
+
+'''
+Tableau Software was initially headquartered in Mountain View, California when it was founded in 2003.
+The following year, it moved its headquarters to the Fremont neighborhood of Seattle, Washington.
+
+'''
+
+
+
+
+
+
+What role did the Tableau user community play in its growth?
+
+'''
+The Tableau user community has played a significant role in the growth of Tableau. Here are some ways how:
+
+User Groups: Tableau User Groups (TUGs) are inclusive meetup events for Tableau enthusiasts to connect, learn, and discuss all things data. These groups have helped community members grow in many ways. With meetups, users can broaden their network and potentially take the next step in their data career. The first two TUGs were formed in 2009 and spearheaded by a few passionate customers looking to learn and share in an informal environment. Today there are more than 150 groups all over the world.
+
+Community Collaboration: Through Tableau Public, there is an active community which allows for data analysts and other interested users to collaborate and learn from others. Product upgrades and patches, as well as new products, are added on a regular basis based on customer feedback.
+
+IT’s Role: IT has a unique opportunity to lead the organization in developing a Data Culture through analytics agility, proficiency, and community. IT can help lead the business to greater outcomes through the deployment and ongoing management of an organization’s scalable analytics environment.
+
+Global Data Community: Looking outside your organization’s walls for inspiration and answers to shared problems can help accelerate your teams’ skills, encourage people to find creative solutions, and ensure lasting analytics engagement.
+
+In summary, the Tableau user community has been instrumental in driving the company’s growth by fostering a culture of learning, collaboration, and innovation.
+
+'''
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+-------------------------------------------------------     END    ------------------------------------------------------------------------
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
