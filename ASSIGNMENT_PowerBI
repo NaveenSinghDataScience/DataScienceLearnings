@@ -1,0 +1,422 @@
+Power BI Questions:
+
+
+1.What is Power BI, and what is its primary purpose?
+
+'''
+Power BI is a unified, scalable platform for self-service and enterprise business intelligence (BI) that’s easy to use.
+It is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Your data might be an Excel spreadsheet, or a collection of cloud-based and on-premises hybrid data warehouses.
+
+The primary purpose of Power BI is to connect to and visualize any data, and seamlessly infuse the visuals into the apps you use every day.
+It helps to analyze the data and provide actionable information.
+It helps the business manager, corporate executives, and other users in making their decisions easily.
+Business intelligence refers to the applications, technologies, and practices for the collection, analysis, integration, and presentation of business information.
+
+'''
+
+
+2.How do you connect data sources to Power BI?
+
+'''
+Connecting data sources to Power BI involves a few steps. Here’s a general guide:
+
+Open Power BI Desktop: Start by opening Power BI Desktop.
+
+Select Get Data: On the Home tab, select the “Get Data” button or down arrow to open the Common data sources list.
+
+Choose Data Source: If the data source you want isn’t listed under Common data sources, select “More” to open the Get Data dialog box.
+You can also open the Get Data dialog box directly by selecting the Get Data icon itself.
+
+Connect to Data Source: From here, you can connect to various types of data sources. For instance, File data sources like Excel Workbook, Text/CSV, XML, JSON, Folder, PDF, Parquet, SharePoint folder. Or Database data sources like SQL Server database, Access database, SQL Server Analysis Services database, Oracle database, IBM Db2 database.
+
+Import Data: Once you’ve connected to your data source, you can import the data into Power BI.
+
+Remember that Power BI is continually expanding the data sources available to Power BI Desktop and the Power BI service. So you’ll often see early versions of work-in-progress data sources marked as Beta or Preview.
+
+'''
+
+
+3.What types of visualizations can you create in Power BI?
+
+'''
+Power BI offers a wide range of visualization types to help you create compelling and insightful reports. Here are some of the visualization types you can create in Power BI:
+
+Area Charts: These are based on line charts with the area between the axis and line filled in.
+
+Bar and Column Charts: These are standard for looking at a specific value across different categories.
+
+Cards: These can display one or more data points, one per row.
+
+Combo Charts: These combine a column chart and a line chart, allowing for a quicker comparison of data.
+
+Decomposition Tree: This visual lets you visualize data across multiple dimensions.
+
+Doughnut Charts: Similar to pie charts, they show the relationship of parts to a whole.
+
+Aster Plot: Similar to pie charts and doughnut charts.
+
+Bullet Charts: These are the replacement of dashboard gauges and meters.
+
+Calendar Charts: These are used to visualize data over time.
+
+Chiclet Slicer: This is a slicer that allows you to select one or more items in a list.
+
+Chord: This is used to show inter-relationships between data in a matrix.
+
+Dot plot: This is used to compare two or three categories of data.
+
+Histogram: This is used to show the distribution of numerical data.
+
+Radar Chart: This is used to compare several quantitative variables.
+
+Stream Graph: This is used to display high-volume datasets.
+
+Sunburst: This is used to visualize hierarchical data across two dimensions, represented in concentric circles.
+
+Remember, the choice of visualization depends on the nature of your data and what you want to convey with it.
+
+'''
+
+
+4.Explain the concept of a dashboard in Power BI.
+
+'''
+A Power BI dashboard is a single page, often referred to as a canvas, that uses visualizations to tell a story.
+It’s limited to one page, so a well-designed dashboard contains only the most important elements of that story.
+The visualizations you see on the dashboard are called tiles.
+You pin tiles to a dashboard from reports, and each report is based on a dataset.
+A dashboard is an introduction to the underlying reports and datasets.
+
+Selecting a visualization takes you to the report and dataset that it’s based on.
+Dashboards are a way to monitor your business and see all your most important metrics at a glance.
+The visualizations on a dashboard can come from one underlying dataset or many, and from one underlying report or many.
+A dashboard combines on-premises and cloud data, providing a consolidated view of data.
+
+A dashboard isn’t just a pretty picture. It’s highly interactive, and the tiles update as the underlying data changes.
+The ability to create a dashboard is considered a creator feature and requires edit permissions on the report.
+Edit permissions are available to report creators and to colleagues the creator grants access to.
+
+Dashboards are not available in Power BI Desktop. You can’t create dashboards on mobile devices, but you can view and share them there.
+
+
+'''
+
+
+5.How can you filter data in Power BI to focus on specific information?
+
+'''
+In Power BI, you can filter data at various levels to focus on specific information. Here’s how you can do it:
+
+Visualization Filter: You can add a filter to a specific visua. Select the visual you want to apply a filter to, then go to the Visualizations pane and click on the Filters icon (in the right-hand pane). A new pane will appear on the right-hand side of the screen, allowing you to define the filter options.
+
+Page Filter: You can add a filter to an entire page. This will affect all visuals on that page.
+
+Report Filter: You can add a filter at the report level. This will affect all pages and visuals within the report.
+
+Using DAX FILTER Function: The DAX FILTER function can be used to create a new table that includes only the rows that meet the filter conditions from another table or expression.
+
+Filtering Data at Source: To filter data before it’s retrieved, you can change the query for each dataset. When you filter data in the query, you filter data at the data source, which reduces the amount of data that must be retrieved and processed in a report.
+
+Remember, after you add filters, you can format them in your Power BI reports to look and act the way you want.
+
+
+'''
+
+
+6.What is a measure in Power BI, and how does it differ from a dimension?
+
+'''
+A measure in Power BI is a way of defining calculations in a DAX model.
+Measures help calculate values not based on each row, but rather, they provide aggregate values from multiple rows from a table.
+They are often called “Calculated Measures” and use DAX (Data Analysis Expressions) to calculate new values from the existing table.
+Measures are used to calculate aggregates like SUM, SUMX, average, etc. They are calculated at the time of query and they are not stored in the database.
+Measures are not stored in the memory, so these are faster.
+
+On the other hand, a dimension in Power BI is a table that has descriptive information, which can be used for slicing and dicing.
+A Dimension table has fields that are descriptive.
+Descriptive fields can be of datatype text, date and time, or even a number.
+Dimension tables describe business entities—the things you model. Entities can include products, people, places, and concepts including time itself.
+
+In summary, measures are used for calculations and provide aggregate values, while dimensions provide descriptive information that can be used to categorize, filter, or slice the data.
+
+
+'''
+
+
+7.What is the Power BI Service, and how does it relate to Power BI Desktop?
+
+'''
+The Power BI Service, sometimes referred to as Power BI online, is the software as a service (SaaS) part of Power BI.
+It’s a cloud-based service that supports report editing and collaboration for teams and organizations.
+You can connect to data sources in the Power BI service, but modeling is limited.
+In the Power BI service, dashboards help you keep a finger on the pulse of your business.
+Dashboards display tiles, which you can select to open reports for exploring further.
+
+On the other hand, Power BI Desktop is a free application that you install on your local computer.
+It lets you connect to, transform, and visualize your data.
+With Power BI Desktop, you can connect to multiple different sources of data, and combine them (often called modeling) into a data model.
+It’s a complete data analysis and report creation tool that is used to connect to, transform, visualize, and analyze your data.
+
+In summary, Power BI Desktop is where you typically create reports and perform data modeling, while the Power BI Service is where you publish these reports for sharing and collaboration. Both are integral parts of the Power BI ecosystem and are used together to provide a complete business intelligence solution.
+
+
+'''
+
+
+8.How can you share Power BI reports and dashboards with others?
+
+'''
+There are several ways to share Power BI reports and dashboards with others:
+
+Share Reports and Dashboards: You can share reports and dashboards directly from Power BI.
+To do this, select ‘Share’ from the top navigation, complete the form, and share it with your team.
+You can share reports from Favorites, Recent, and My Workspace.
+Reports and dashboards may be shared with internal and external users.
+You’ll need a Power BI Pro or Premium Per User license to share content; users will need the same license to view the content.
+
+Adding Comments to Power BI Reports: You can add comments to dashboards, reports, and specific visuals on a report or a dashboard.
+Use @mention to tag team members. Tagged individuals immediately receive an e-mail in their inbox, and if they are using a Power BI Mobile app, they will receive a push notification on their device about the conversation.
+
+Collaborating in Microsoft Teams: As the usage of Microsoft Teams increases, it makes sense to streamline conversations and meetings about reports in one place.
+Adding Power BI reports to Teams reduces the need to switch between apps during meetings.
+
+Power BI Workspaces and Apps: You can share from workspaces other than My Workspace, if you have the Admin or Member role in the workspace.
+If you have the Contributor or Viewer role, you can share if you have Reshare permissions.
+
+Remember, recipients can view and interact with the report or dashboard but can’t edit the item.
+Depending on permissions, internal recipients can share the reports with others. External users can’t reshare the report.
+
+
+'''
+
+
+9.What is the Power Query Editor, and what is its role in Power BI?
+
+'''
+The Power Query Editor in Power BI is a tool that allows you to connect to one or many data sources, shape and transform the data to meet your needs, and then load that model into Power BI Desktop. It plays a crucial role in data transformation and shaping the data structure to meet users’ needs.
+
+When you open Power Query Editor, it initially appears as a blank pane, ready for data. After a query is loaded, the Power Query Editor view becomes more interesting.
+It consists of four main areas: the ribbon, the Queries pane, the Data view, and the Query Settings pane.
+
+The ribbon in Power Query Editor consists of several tabs: Home, Transform, Add Column, View, Tools, and Help.
+
+The Queries pane lists queries that are available for selection, viewing, and shaping.
+
+The Data view displays data from the selected query and is available for shaping.
+
+The Query Settings pane lists the query’s properties and applied steps.
+
+You can perform various data transformations such as filtering, sorting, merging, and grouping in the Power Query Editor.
+It is also used to transform or edit data files before they are actually loaded into Power BI. This makes it an essential tool in preparing your data for analysis in Power BI.
+
+
+'''
+
+
+10.What are the different editions or versions of Power BI available?
+
+'''
+Power BI comes in three different versions:
+
+Power BI Free/Desktop: This version is for users who want to get business insights from their data with visualizations.
+It enables you to connect to 70+ data sources, analyze data, publish to the web, export to excel and much more.
+
+Power BI Pro: This is the full version of Power BI. It allows users unlimited reporting, sharing, and viewing of reports.
+
+The biggest difference of Power BI Pro vs. Free is the fact that with Pro you have the option and the ability to share the data, reports, and dashboards with a large number of other users that also have a Power BI Pro license while also being able to create an app-based workspace. It costs $10 per user/month.
+
+Power BI Premium: This version provides a license for all users in an organization.
+Power BI Premium license provides a dedicated unit of capacity for all users in the organization.
+This dedicated capacity (aka Premium Workspace) can be used to host large datasets up to 50GB while offering a total storage of 100TB in the cloud. It comes in two pricing models: Per user $20 per user/month and Per capacity from $4,995 per capacity/month.
+
+Each version has its own features and capabilities, and the choice between them depends on your specific needs and requirements.
+
+
+'''
+
+
+
+Power BI History Questions:
+
+
+
+1.When was Power BI first introduced as a product by Microsoft?
+
+'''
+Power BI was first released to the general public by Microsoft on 24 July 2015.
+
+
+'''
+
+
+2.Can you name one of the key individuals or teams responsible for the development of Power BI?
+
+'''
+The development and maintenance of Power BI is typically overseen by a centralized team within an organization.
+This team could be IT, BI, or a Center of Excellence (COE). They are responsible for content management and supporting self-service users throughout the organization. However, specific individuals who contributed to the development of Power BI are not publicly listed.
+
+'''
+
+
+3.What are some major updates or features introduced in Power BI over the years?
+
+'''
+Over the years, Power BI has introduced several major updates and features to enhance its capabilities. Here are some of the notable ones:
+
+Power BI Premium Multi-Geo (in preview): This feature helps multinational organizations address their data residency requirements.
+
+New Power BI Admin APIs: Along with a .NET SDK and a PowerShell module, these APIs enable administrators to discover artifacts in their Power BI tenant, as well as take administrative actions.
+
+Mobile Formatting Options: These new options provide more flexibility in formatting reports for mobile viewing.
+
+Dynamic M Query Parameters Support: This feature has been extended to support more data sources.
+
+Deployment Pipeline Enhancements: These improvements make it easier to manage and deploy Power BI content.
+
+Improvements to Downloading a PBIX File: These updates enhance the user experience when downloading Power BI reports.
+
+Edit Your Data Model in the Power BI Service: This feature allows you to make changes to your data model directly in the Power BI service.
+
+Mobile Layout Interactive Canvas: This update made the mobile canvas interactive, providing the ability to test how buttons, slicers, and visuals will behave on the app before publishing the report.
+
+Smart Narrative Improvements: The Smart Narrative visual can now display either text or numeric values when showing data for a column.
+
+
+These are just a few examples of the many updates and features that have been introduced in Power BI over time.
+
+'''
+
+
+4.In what year did Microsoft release the cloud-based Power BI service?
+
+'''
+The cloud-based Power BI service was first released to the general public by Microsoft on 24 July 2015.
+
+'''
+
+
+5.How has Power BI's integration with other Microsoft products evolved?
+
+'''
+Power BI’s integration with other Microsoft products has evolved significantly over time.
+It now integrates seamlessly with a wide range of Microsoft solutions, including Exchange, Office 365, Dynamics 365, SharePoint, Excel, Cortana, and Teams.
+Users can extend Power BI’s native connectivity to new data sources using Custom Connectors for Power BI, or Microsoft Flow.
+
+One of the key evolutions has been the inclusion of Power BI in the Microsoft 365 apps.
+This means it can be installed and deployed by IT right alongside Word, Excel, Outlook, Teams and more.
+This integration allows for a more streamlined workflow and enhances the ability to collaborate and share across different platforms.
+
+Furthermore, Power BI has also improved its collaboration features with Microsoft Teams.
+Users can now add the Power BI app to Microsoft Teams, get notifications in Teams about Power BI activity, and share their work within Teams.
+
+
+These integrations have made Power BI a more powerful and versatile tool for data analysis and visualization within the Microsoft ecosystem.
+
+'''
+
+
+6.What are some key competitors or alternatives to Power BI in the business intelligence market?
+
+'''
+There are several key competitors or alternatives to Power BI in the business intelligence market. Here are some of them:
+
+Tableau: Known for its strong data visualization capabilities, it’s highly scalable, capable of handling large volumes of data and offers both cloud and on-premises deployment options.
+
+Qlik Sense: It’s a self-service data analysis and visualization tool.
+
+SAP BusinessObjects BI Suite: This is a comprehensive business intelligence solution from SAP.
+
+Sisense Fusion Analytics: It’s a business intelligence tool that allows you to join, analyze, and visualize all the data you want.
+
+MicroStrategy: It provides powerful software solutions and expert services that empower individuals with actionable intelligence.
+
+Looker: A data platform that makes it easy for everyone to find, explore and understand the data that drives your business.
+
+TIBCO Spotfire: It’s a smart, secure, governed, enterprise-class analytics platform that delivers AI-driven, visual, geo, and streaming analytics.
+
+Domo: It’s a business intelligence tool that brings together all your data, systems, and people into a digitally-connected enterprise.
+
+
+Each of these tools has its own strengths and may be more suitable depending on your specific needs.
+
+'''
+
+
+7.What are some industries or sectors that have prominently adopted Power BI for data analytics?
+
+'''
+Power BI has been adopted across a wide range of industries for data analytics. Here are some of the sectors that have prominently adopted Power BI:
+
+Manufacturing: Power BI is used in the manufacturing industry to improve productivity growth, manage supply chains, predict sales and marketing expenses, and calculate equipment performance.
+
+Finance: Power BI is used in the finance sector to analyze financial data and make informed decisions.
+
+Marketing: Marketers use Power BI to analyze marketing data, track campaigns, and understand customer behavior.
+
+Sales: Sales teams use Power BI to track sales performance, analyze sales data, and forecast future sales.
+
+Operations: Operational teams use Power BI to monitor operational efficiency, track performance metrics, and identify areas for improvement.
+
+Education: Power BI is used in the education sector for data analysis and visualization.
+
+Healthcare: In the healthcare sector, Power BI is used to analyze patient data, track healthcare metrics, and improve patient care.
+
+
+These are just a few examples. The versatility of Power BI makes it suitable for almost any industry that requires data analytics.
+
+'''
+
+
+8.What is the significance of the Power BI Desktop, and how does it differ from the Power BI Service?
+
+'''
+Power BI Desktop and Power BI Service are two components of the Power BI suite that serve different purposes but work together to provide a complete self-service business intelligence solution.
+
+Power BI Desktop is a Windows application used for creating reports. It’s a powerful data exploration and reporting tool where you can pull data from various sources and create complex models. You can transform, shape, and model your data with powerful, built-in Data Analysis Expressions (DAX) capabilities. You can also design stunning reports with interactive visualizations. Once your reports are created in Power BI Desktop, you can publish them to the Power BI Service for sharing.
+
+On the other hand, Power BI Service is a cloud-based platform (also referred to as Power BI online) that is used to publish, share, collaborate and consume the reports created using Power BI Desktop. It’s where you can create dashboards, which are collections of visuals, reports, and other data that are consolidated on a single pane. You can also set up automatic data refresh and create new visualizations directly in the Power BI Service.
+
+
+In summary, Power BI Desktop is primarily used for creating and publishing reports, while the Power BI Service is where those reports are shared, collaborated on, and consumed.
+
+'''
+
+
+9.How has the Power BI user community and online presence grown since its launch?
+
+'''
+The Power BI user community has seen significant growth since its launch. As of October 2016, more than 50,000 people were visiting the Power BI community weekly. The community contributions come from a wide variety of individuals, including users, seasoned practitioners, Microsoft Power BI team members, and Microsoft support professionals.
+
+By March 2016, Power BI had exceeded more than 5 million subscribers. The rapid growth of Power BI speaks to the explosion of data and the growing requirement to make important business decisions in a condensed amount of time.
+
+The Power BI community is designed to make it easier to explore, ask questions, and offer solutions across the entire Power Platform. It’s a hub for training, webinars, events, report and visual gallery showcases, tips, tricks, and code samples to improve efficiency and results.
+
+In terms of online presence, the Business Intelligence (BI) Market size is expected to grow from USD 26.81 billion in 2023 to USD 42.49 billion by 2028. This indicates a growing market for business intelligence tools like Power BI.
+
+Overall, the growth of the Power BI user community and its online presence reflects the increasing adoption of data analytics tools in various industries.
+
+'''
+
+
+10.What is the Microsoft Power Platform, and how does Power BI fit into it?
+
+'''
+The Microsoft Power Platform is a suite of business intelligence, app development, and app connectivity software applications. It’s designed to empower everyone at an organization with an intuitive, collaborative, and extensible platform of low-code tools that makes it easy to create efficient and flexible solutions.
+
+The Power Platform consists of five product areas:
+Power BI, Power Apps, Power Automate, Power Virtual Agents, and Power Pages.
+
+Power BI is a key component of the Microsoft Power Platform.
+It’s a business analytics tool that allows you to visualize your data and share insights across your organization.
+You can connect to hundreds of data sources, simplify data prep, and drive ad hoc analysis.
+It’s used to capture real-time data from Power Apps, Power Virtual Agents, and Power Automate, then allow your team to take the right actions with key insights from Power BI.
+
+
+In summary, the Microsoft Power Platform provides a comprehensive suite of tools for business intelligence and application development. Power BI fits into this platform as the primary tool for data visualization and business intelligence.
+
+'''
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+---------------------------------------------------------          END OF ASSIGNMENT      --------------------------------------------------------------------------------------------------
+____________________________________________________________________________________________________________________________________________________________________________________________

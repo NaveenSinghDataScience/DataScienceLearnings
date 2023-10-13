@@ -1,0 +1,441 @@
+Github_QDLC(L1)
+
+
+
+1.What is GitHub?
+
+""""
+GitHub is a cloud-based service that helps developers store and manage their code, as well as track and control changes to their code.
+It’s a platform for collaboration and version control.
+
+Here are some key concepts related to GitHub:
+
+Version Control: This helps developers track and manage changes to a software project’s code. As a software project grows, version control becomes essential.
+
+Git: Git is a specific open-source version control system created by Linus Torvalds in 2005. It is a distributed version control system, which means that the entire codebase and history is available on every developer’s computer, which allows for easy branching and merging.
+
+GitHub: GitHub is a for-profit company that offers a cloud-based Git repository hosting service. It makes it easier for individuals and teams to use Git for version control and collaboration. GitHub’s interface is user-friendly enough so even novice coders can take advantage of Git.
+
+In addition to this, GitHub also allows you to work with different versions of a repository at the same time through branching. Changes are called commits, and each commit has a description explaining why a change was made. Pull Requests are proposals that your changes should be merged with the master.
+
+""""
+
+
+2.How do you create a GitHub account?
+
+""""
+Creating a GitHub account is a straightforward process. Here are the steps you need to follow:
+
+Open GitHub in a web browser.
+
+Click on the Sign Up button.
+
+You’ll see a page with a form under the heading "Create your account".
+
+Fill in each field for username, email address, and password.
+
+Choose whether you want to receive updates and announcements via email.
+
+Click on Continue.
+
+Verify your account by solving a puzzle.
+
+Once you’ve completed these steps, you’ll have your own GitHub account! You can start exploring and contributing to projects, or create your own repositories.
+
+Remember, GitHub is more than just a place to store your code. It’s a platform that allows for collaboration and version control, making it an essential tool for developers.
+
+
+""""
+
+
+3.What is a repository in GitHub?
+
+""""
+A repository in GitHub is a location where the files and codes corresponding to a project and their respective versions as a part of revision history are stored, managed, and used.
+It can contain folders and any type of files (HTML, CSS, JavaScript, Documents, Data, Images).
+A repository contains all of your project’s files and each file’s revision history.
+You can discuss and manage your project’s work within the repository.
+
+Here are some key concepts related to a GitHub repository:
+
+Ownership: You can own repositories individually, or you can share ownership of repositories with other people in an organization.
+
+Visibility: You can restrict who has access to a repository by choosing the repository’s visibility.
+
+Collaboration: For user-owned repositories, you can give other people collaborator access so that they can collaborate on your project.
+
+Issues: You can use issues to collect user feedback, report software bugs, and organize tasks you’d like to accomplish.
+
+Discussions: You can use GitHub Discussions to ask and answer questions, share information, make announcements, and conduct or participate in conversations about a project.
+
+Pull Requests: You can use pull requests to propose changes to a repository.
+
+Project Boards: You can use project boards to organize and prioritize your issues and pull requests.
+
+
+In essence, a GitHub repository becomes a folder that is available online on the cloud for people to download, access, and contribute4. This folder contains the code files of the project which can now be used by other people.
+
+""""
+
+
+4.How can you create a new repository on GitHub?
+
+""""
+Creating a new repository on GitHub is a simple process. Here are the steps you need to follow:
+
+Log in to your GitHub account.
+
+In the upper-right corner of any page, use the drop-down menu, and select New repository.
+
+Type a short, memorable name for your repository.
+
+Optionally, add a description of your repository.
+
+Choose a repository visibility.
+
+Select Initialize this repository with a README.
+
+Click Create repository.
+
+Congratulations! You’ve successfully created your first repository, and initialized it with a README file.
+A commit is like a snapshot of all the files in your project at a particular point in time.
+When you created your new repository, you initialized it with a README file. README files are a great place to describe your project in more detail, or add some documentation such as how to install or use your project. The contents of your README file are automatically shown on the front page of your repository.
+
+""""
+
+
+5.What is a README.md file, and why is it important in a GitHub repository?
+
+""""
+A README.md file is an essential guide that gives other developers a detailed description of your GitHub project.
+It’s the first thing people see when they encounter your project, so it should be brief but detailed.
+The README.md file is prominently displayed on the repository’s homepage and acts as an introduction to the repo’s project.
+
+Here are some reasons why a README.md file is important:
+
+Project Description: A well-maintained description allows you to show off your work to other developers as well as potential employers.
+
+Usage Instructions: Provide instructions and examples so that users or contributors can use the project.
+
+Credits: If you have worked on the project as a team, list your team members. You should also include their GitHub profiles.
+
+SEO: Creating a README file in GitHub has several other advantages. For starters, it makes the project more discoverable by helping in SEO (Search Engine Optimization) by providing relevant and descriptive information about your project or repository.
+
+Quality Improvement: The project creators are forced to think more deeply about the project’s aims and how it should be used when they take the time to create clear and concise documentation. This can result in a more cohesive and well-planned undertaking.
+
+Central Location for Resources: The README file also acts as a central location for essential project-related links and resources.
+
+
+In essence, a README.md file is like a “welcome” page for new developers that want to use your code.
+It explains the basics of your project: what it is, what it does, and how to install/use it.
+It’s basically a manual for your project, making it an essential part of any GitHub repository.
+
+""""
+
+
+6.How do you add files to a GitHub repository?
+
+""""
+You can add files to a GitHub repository either using the GitHub website or the command line.
+Here’s how you can do it:
+
+Using the GitHub Website:
+
+Navigate to the main page of the repository.
+
+Above the list of files, select the Add file dropdown menu and click Upload files.
+
+Drag and drop the file or folder, or click choose your files.
+
+In the Commit message field, type a short, meaningful commit message that describes the change you made to the file.
+
+Decide whether to add your commit to the current branch or to a new branch.
+
+Click Propose changes.
+
+
+Using the Command Line:
+
+On your computer, move the file you’d like to upload to GitHub into the local directory that was created when you cloned the repository.
+
+Open Terminal.
+
+Change the current working directory to your local repository.
+
+Stage the file for commit to your local repository using git add <filename>.
+
+Commit the file that you’ve staged in your local repository using git commit -m "<Message>".
+
+Push the changes in your local repository to GitHub using git push -u origin master.
+
+Remember, you can add files using git add README, git add <folder>/*, or even git add *.
+When you make modifications, run git status which gives you the list of files modified, add them using git add * for everything or you can specify each file individually, then git commit -m <message> and finally, git push -u origin master.
+
+""""
+
+
+7.How can you commit changes to a repository in GitHub?
+
+""""
+Committing changes to a repository in GitHub can be done either using the GitHub Desktop app or the terminal.
+
+Using the GitHub Desktop App:
+
+Once you’ve made changes to your files in your text editor and saved them, open your GitHub desktop app.
+
+You will be able to view the changes made to the repository and the repository history.
+
+Make sure you have selected the branch you wish to commit the changes to.
+
+Now, enter a very short description of the commit so that you and your team members are on the same page without any confusion.
+
+Click on Commit to BRANCH.
+
+To push your local changes to the remote repository, in the repository bar, click Push origin.
+
+
+Using Terminal:
+
+On your computer, move the file you’d like to upload to GitHub into the local directory that was created when you cloned the repository.
+
+Open Terminal.
+
+Change the current working directory to your local repository.
+
+Stage the file for commit to your local repository using git add <filename>.
+
+Commit the file that you’ve staged in your local repository using git commit -m "<Message>".
+
+Push the changes in your local repository to GitHub using git push -u origin master.
+
+Remember, commits are snapshots of your entire repository at specific times. You should make new commits often, based around logical units of change.
+Over time, commits should tell a story of the history of your repository and how it came to be the way that it currently is.
+Commits include lots of metadata in addition to the contents and message, like the author, timestamp, and more.
+
+""""
+
+
+8. What is a pull request, and how do you create one?
+
+""""
+A pull request in GitHub is a way to propose changes to a repository.
+It’s a mechanism for developers to notify project maintainers about changes they’ve made to a project.
+These changes are proposed in a branch, which ensures that the default branch only contains finished and approved work.
+Anyone with read access to a repository can create a pull request.
+
+Here’s how you can create a pull request:
+
+On GitHub.com, navigate to the main page of the repository.
+
+In the “Branch” menu, choose the branch that contains your commits.
+
+Above the list of files, click Compare & pull request.
+
+Enter a title and description for your pull request.
+
+Click Create pull request.
+
+
+Remember, you can specify which branch you’d like to merge your changes into when you create your pull request.
+Pull requests can only be opened between two branches that are different.
+You can link a pull request to an issue to show that a fix is in progress and to automatically close the issue when someone merges the pull request.
+
+""""
+
+
+9. What is a fork in GitHub?
+
+""""
+A fork in GitHub is a new repository that shares code and visibility settings with the original “upstream” repository.
+Forks are often used to iterate on ideas or changes before they are proposed back to the upstream repository, such as in open source projects or when a user does not have write access to the upstream repository.
+
+When you fork a repo, you create your own copy of the repo on your GitHub account.
+This allows you to make modifications in it without affecting the original project.
+Once you’ve made your changes and are ready to share them, you can propose these changes to the original repository by creating a pull request.
+
+For example, if you find a bug in a project and have a fix for it, you can fork the repository, make the fix in your forked repository, and then submit a pull request to the project owner.
+This way, not only is the bug brought to the attention of project maintainers, but a solution is also proposed, making it easier for maintainers to fix the issue.
+
+Forking is a fundamental aspect of social coding on GitHub.
+It’s what allows people to contribute to projects that they don’t have write access to and fosters community-driven development.
+
+""""
+
+
+10. How do you clone a repository to your local machine?
+
+""""
+Cloning a repository from GitHub to your local machine involves copying the repository from GitHub.com, which makes it easier to fix merge conflicts, add or remove files, and push larger commits.
+Here are the steps to clone a repository:
+
+Navigate to the main page of the repository on GitHub.com.
+
+Above the list of files, click Code.
+
+Copy the URL for the repository.
+
+Open Terminal (on Mac) or Command Line (on Windows with Git Bash).
+
+Change the current working directory to the location where you want the cloned directory.
+
+Type git clone, and then paste the URL you copied earlier. It should look something like this: git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.
+
+Press Enter to create your local clone.
+
+
+This will create a full copy of all the repository data that GitHub.com has at that point in time, including all versions of every file and folder for the project.
+You can push your changes to the remote repository on GitHub.com, or pull other people’s changes from GitHub.com.
+
+""""
+
+
+11. How do you push changes from your local machine to a GitHub repository?
+
+""""
+Pushing changes from your local machine to a GitHub repository involves a few steps:
+
+Open Terminal (on Mac) or Command Line (on Windows with Git Bash).
+
+Change the current working directory to your local repository.
+
+Stage the file for commit to your local repository using git add <filename>. You can add all files using git add * .
+
+Commit the files that you’ve staged in your local repository using git commit -m "<Message>". This prepares them to be pushed to a remote repository.
+
+Push the changes in your local repository to GitHub using git push origin master.
+If you’re using Git 2.28.0 or a later version, you can set the name of the default branch using -b. For example, git init -b main.
+
+Remember, commits are snapshots of your entire repository at specific times. You should make new commits often, based around logical units of change. Over time, commits should tell a story of the history of your repository and how it came to be the way that it currently is.
+
+""""
+
+
+12. What is a branch in GitHub, and why would you use it?
+
+""""
+A branch in Git is a separate line of development that diverges from the main branch.
+It’s similar to the branch of a tree. The primary or default branch in Git is the master branch, similar to a trunk of a tree.
+Branches allow you to develop new features, fix bugs, or experiment without affecting the main codebase.
+
+Here are some reasons why you would use branches in Git:
+
+Isolation of Changes: Branches isolate your development work from other branches in the repository. This means you can make changes without affecting the main part of the project.
+
+Feature Development and Bug Fixes: You could use a branch to develop a new feature or fix a bug.
+
+Non-Linear Development: Branches create another line of development that is entirely different or isolated from the main stable master branch.
+
+Collaboration: If you’re working on a team, branches allow different team members to work on different features simultaneously without stepping on each other’s toes.
+
+Experimentation: If you’re trying out new ideas or techniques, you can do so in a separate branch without affecting the main codebase.
+
+
+In essence, using branches allows for safer experimentation and more flexible collaboration when developing projects.
+
+""""
+
+
+13. How can you merge a branch into the main/master branch?
+
+""""
+Merging a branch into the main or master branch in GitHub involves a few steps:
+
+Open Terminal (on Mac) or Command Line (on Windows with Git Bash).
+
+Change the current working directory to your local repository.
+
+Switch to the master branch using git checkout master.
+
+Pull the latest changes in the master branch using git pull origin master.
+
+Merge the branch you want to merge into the master branch using git merge <branch-name>.
+
+Push the changes to the remote repository on GitHub using git push origin master.
+
+
+Remember, merging is a common practice for bringing together independent lines of development.
+It allows you to bring changes from another branch into your current branch.
+
+""""
+
+
+14. What is the purpose of the "Issues" tab in a GitHub repository?
+
+""""
+The “Issues” tab in a GitHub repository serves as a bug tracker for the project.
+It’s a section in every repository that can be used for discussions, which include a variety of things like reporting a bug on that repository, asking questions, or even asking for a particular feature.
+It’s a great place to keep track of tasks and enhancements of the project.
+
+Here are some features of GitHub Issues:
+
+Title and Description: An issue contains a title and a description which clearly explains what the issue is about.
+
+Labels: Color-coded labels help to filter out specific issues.
+
+Milestones: Milestones help to track issues and merge requests to achieve a broader goal in a certain duration of time.
+
+Assignee: An assignee, who is responsible to work on a specific issue at a time and to take the issue forward.
+
+Comments: Comments can be done by anyone who has access to the repository.
+
+
+In essence, GitHub Issues allows you to create text-based descriptions of tasks, bugs, changes, and updates in your software development project to keep track of them and address them systematically.
+Most software development teams use GitHub Issues for tracking bugs and requesting features.
+It can also help manage discussions, process support requests, track relationships and dependencies, and gather documentation feedback to help your team stay focused and streamline workflows while collaborating seamlessly.
+
+""""
+
+
+15. How do you close an issue on GitHub?
+
+""""
+Closing an issue on GitHub can be done through the GitHub web interface.
+Here are the steps:
+
+Navigate to the main page of the repository.
+
+Under your repository name, click Issues.
+
+In the list of issues, click the issue you’d like to close.
+
+Optionally, to change your reason for closing the issue, next to “Close issue,” select, then click a reason.
+
+Click Close issue.
+
+
+Remember, anyone can close an issue they opened. Repository owners, collaborators on repositories owned by a personal account, and people with triage permissions or greater on repositories owned by an organization can close issues opened by others.
+You can also close issues automatically with keywords in pull requests and commit messages.
+
+You can close an issue in GitHub using keywords in pull requests and commit messages by following these steps:
+
+Linking a Pull Request to an Issue Using a Keyword: You can link a pull request to an issue by using a supported keyword in the pull request’s description or in a commit message.
+The pull request must be on the default branch. Here are the keywords you can use:
+
+close
+closes
+closed
+fix
+fixes
+fixed
+resolve
+resolves
+resolved
+
+Syntax for Closing Keywords: The syntax for closing keywords depends on whether the issue is in the same repository as the pull request.
+
+Here are some examples:
+
+Issue in the same repository: KEYWORD #ISSUE-NUMBER (e.g., Closes #10)
+
+Issue in a different repository: KEYWORD OWNER/REPOSITORY#ISSUE-NUMBER (e.g., Fixes octo-org/octo-repo#100)
+
+Closing Multiple Issues: If you want to close multiple issues, use the full syntax for each issue (e.g., Resolves #10, resolves #123, resolves octo-org/octo-repo#100).
+
+Unlinking an Issue: To unlink an issue that you linked using a keyword, you must edit the pull request description to remove the keyword.
+
+Remember, when you merge a linked pull request into the default branch of a repository, its linked issue is automatically closed. You can also use closing keywords in a commit message. The issue will be closed when you merge the commit into the default branch.
+
+""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""           END OF ASSIGNMENT      """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+____________________________________________________________________________________________________________________________________________________________________________________________
