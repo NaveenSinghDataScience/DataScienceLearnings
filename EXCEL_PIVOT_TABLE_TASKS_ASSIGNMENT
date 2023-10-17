@@ -1,0 +1,181 @@
+Dataset of fruit sales:
+
+Imagine you have the following data:
+
+Date	   Fruit	Sales
+2023-10-01	Apple	100
+2023-10-01	Banana	150
+2023-10-02	Apple	120
+2023-10-02	Orange	180
+2023-10-03	Banana	200
+2023-10-03	Apple	90
+
+And you'd like to find out the total sales for each type of fruit. You could create a pivot table to summarize this information.
+
+Rows: Fruit (Apple, Banana, Orange)
+Values: Sales (Sum)
+
+
+Resulting Pivot Table :
+
+
+Row Labels         Sum of Sales 
+
+ 
+
+01-10-2023           250 
+
+Apple                100 
+
+Banana               150 
+
+02-10-2023           300 
+
+Apple                120 
+
+Orange               180 
+
+03-10-2023           290 
+
+Apple                 90 
+
+Banana               200 
+
+Grand Total          840 
+
+
+
+
+
+
+
+
+
+Given the summarized data provided in the table , please complete the following tasks:
+
+* Reconstruct Dataset: Create a detailed dataset indicating the sales of different fruits on each given date. Organize the data into columns labeled "Date", "Fruit", and "Sales". Ensure that the sum of sales for each fruit on the respective dates matches the totals provided in the summarized data.
+
+"""
+Here is the detailed dataset you requested:
+
+Date	    Fruit	Sales
+
+2023-10-01	Apple	100
+
+2023-10-01	Banana	150
+
+2023-10-02	Apple	120
+
+2023-10-02	Orange	180
+
+2023-10-03	Banana	200
+
+2023-10-03	Apple	90
+
+"""
+
+* Sales Analysis: Identify which fruit had the highest overall sales across all dates.
+
+"""
+Sales Analysis: The fruit with the highest overall sales across all dates is the Banana with a total of 350 sales.
+
+"""
+
+
+* Date Comparison: Determine the date with the highest total
+
+"""
+Date Comparison: The date with the highest total sales is 2023-10-03 with a total of 290 sales.
+
+"""
+
+
+
+
+Task 1: Sales Trend Analysis
+Analyze the sales trend for each fruit over the provided dates. Are there any notable peaks or troughs? What might account for these variations?
+
+"""
+Sales Trend Analysis : The sales trend for each fruit over the provided dates is as follows:
+
+Apple: Sales seem to be decreasing over time, with a peak on 2023-10-02 and a trough on 2023-10-03.
+Banana: Sales are increasing, with a peak on 2023-10-03.
+Orange: There’s only one data point for Orange, so it’s hard to identify a trend.
+
+"""
+
+Task 2: Top Performer
+Identify the fruit with the highest cumulative sales over the given period. Can you pinpoint the date when this fruit had the highest sales?
+
+"""
+Top Performer : The fruit with the highest cumulative sales over the given period is Banana with 350 sales. The date when Banana had the highest sales is 2023-10-03.
+
+"""
+
+Task 3: Sales Comparison
+Compare the sales of Apple and Banana on 2023-10-01. Which fruit had better sales on that specific date?
+
+"""
+Sales Comparison : On 2023-10-01, Banana had better sales (150) compared to Apple (100).
+
+"""
+
+Task 4: Data Filtering
+Using the filter options in the PivotChart, isolate the sales data for Orange. How does its sales on 2023-10-02 compare to the other fruits on the same date?
+
+"""
+Data Filtering : On 2023-10-02, Orange had sales of 180, which is higher than Apple’s sales (120) on the same date.
+
+"""
+
+Task 5: Chart Customization
+Customize the appearance of the PivotChart. Change its chart type, apply a different color scheme, or add data labels to enhance readability.
+
+"""
+You can easily do this in Excel by selecting the chart and using the “Chart Tools” options.
+
+"""
+
+Task 6: Sales Projection
+Based on the given data, make a sales projection for each fruit for the next date, 2023-10-04. Use simple linear trends or averages for this projection.
+
+"""
+Sales Projection Based on simple averages:
+
+Apple: (100+120+90)/3 = ~103
+Banana: (150+200)/2 = ~175
+Orange: As there’s only one data point, it’s hard to make a projection.
+
+"""
+
+Task 7: Data Interpretation
+Interpret the reasons behind the sales fluctuations. Are there external factors (like seasonality, promotions, etc.) that might influence these sales figures?
+
+"""
+Data Interpretation : Without additional context, it’s hard to definitively interpret the reasons behind the sales fluctuations. Possible factors could include seasonality, promotions, stock availability, etc.
+
+"""
+
+Task 8: Anomaly Detection
+Identify if there are any anomalies in the sales data. For instance, was there a date when a typically best-selling fruit had an unusual dip in sales?
+
+"""
+There doesn’t appear to be any anomalies in the given data. All fluctuations seem normal.
+
+"""
+
+Task 9: Interactive Exploration
+Using slicers or timeline tools, create an interactive dashboard where one can filter and view sales based on specific criteria like a particular fruit or date range.
+
+"""
+You can do this in Excel using slicers or timeline tools under the “Insert” tab.
+
+"""
+
+Task 10: Data Expansion
+Imagine and add sales data for two more fruits for the given dates. Then, update the PivotChart to incorporate this new data and analyze the extended dataset's trends and patterns.
+
+"""
+Let’s add two more fruits - Grapes and Mangoes. You can update your PivotChart in Excel to incorporate this new data and analyze the trends and patterns.
+
+"""
