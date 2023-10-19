@@ -29,7 +29,7 @@ Discussion
 Question 1: What is the correlation coefficient value in C2?
 
 """
-The correlation coefficient value in C2 is -0.834057656
+The correlation coefficient value in C2 is -1.
 
 
 """
@@ -37,7 +37,7 @@ Question 2: How would you interpret this in terms of the relationship between sa
 
 """
 The interpretation of this relationship will depend on the correlation coefficient value.
-For example, here the value is negative(-0.834057656), it could mean that increasing advertising expenses are associated with decreasing sales.
+For example, here the value is negative(-1), it could mean that increasing advertising expenses are associated with decreasing sales.
 
 """
 Question 3: Based on the scatter plot, do the visual data points confirm your findings from the correlation coefficient?
