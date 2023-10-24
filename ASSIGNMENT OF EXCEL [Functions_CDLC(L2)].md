@@ -1,4 +1,5 @@
 What is a function in Excel?
+
 '''
 A function in Excel is a pre-built formula with a specific purpose. Excel provides hundreds of functions in various categories like dates and times, text, statistics, lookup, financial, engineering, etc. Most Excel functions require specific inputs, called function arguments.
 
@@ -9,6 +10,7 @@ We would use it like this: =SUM(A1:A5), which would add up the values in cells A
 '''
 
 How do you start a function in Excel?
+
 '''
 To start a function in Excel, follow these steps:
 
@@ -24,6 +26,7 @@ The completed function will look something like this: =SUM(A1:A5). This tells Ex
 '''
 
 What is the purpose of using functions in Excel?
+
 '''
 Functions in Excel are used for a variety of purposes, including:
 
@@ -42,6 +45,7 @@ In summary, Excel functions are powerful tools that can save you time, improve y
 '''
 
 What is the difference between a function and a formula in Excel?
+
 '''
 In Excel, a formula is an expression that you create inside a cell to perform calculations or tasks. It starts with an equal sign (=) and can include cell references, operators, numbers, etc. For example, =1+2 and =A1+D3 are formulas.
 
@@ -52,6 +56,7 @@ The key difference between a function and a formula in Excel is that you can ins
 '''
 
 How can you enter a function manually in a cell?
+
 '''
 To manually enter a function in an Excel cell, follow these steps:
 
@@ -78,6 +83,7 @@ This tells Excel to add up the values in cells A1 through A5 and display the res
 '''
 
 What is the SUM function used for in Excel?
+
 '''
 The SUM function in Excel is used to add up a series of numbers. It’s one of the most commonly used functions in Excel and is very helpful for performing financial calculations, statistical analysis, or managing data.
 
@@ -94,6 +100,7 @@ The completed function will look like this: =SUM(A1:A5). This tells Excel to add
 '''
 
 How do you use the SUM function to add a range of numbers?
+
 '''
 To use the SUM function to add a range of numbers in Excel, follow these steps:
 
@@ -110,6 +117,7 @@ Remember, you can also sum multiple ranges by separating them with commas inside
 '''
 
 Explain the function of the AVERAGE function in Excel.
+
 '''
 The AVERAGE function in Excel calculates the average (arithmetic mean) of a set of numbers. It’s very useful when you need to find the central tendency of a data set.
 
@@ -129,6 +137,7 @@ Remember, you can also average multiple ranges by separating them with commas in
 '''
 
 How do you find the highest value in a range of cells using a function?
+
 '''
 To find the highest value in a range of cells in Excel, you can use the MAX function. Here’s how:
 
@@ -145,6 +154,7 @@ Remember, you can also find the maximum value across multiple ranges by separati
 '''
 
 What function can you use to find the lowest value in a range of cells?
+
 '''
 To find the lowest value in a range of cells in Excel, you can use the MIN function. Here’s how:
 
@@ -161,6 +171,7 @@ Remember, you can also find the minimum value across multiple ranges by separati
 '''
 
 How do you use the COUNT function to count the number of cells in a range that contain numbers?
+
 '''
 To use the COUNT function to count the number of cells in a range that contain numbers, follow these steps:
 
@@ -177,6 +188,7 @@ Remember, you can also count across multiple ranges by separating them with comm
 '''
 
 What does the MAX function do, and how do you use it?
+
 '''
 The MAX function in Excel is used to find the highest (maximum) number in a given set of values or range of cells. It’s very useful when you need to identify the largest number in a dataset.
 
@@ -195,6 +207,7 @@ Remember, you can also find the maximum value across multiple ranges by separati
 '''
 
 What is the purpose of the MIN function in Excel?
+
 '''
 The MIN function in Excel is used to find the smallest (minimum) number in a given set of values or range of cells. It’s very useful when you need to identify the smallest number in a dataset.
 
@@ -213,6 +226,7 @@ Remember, you can also find the minimum value across multiple ranges by separati
 '''
 
 How can you use the IF function to create a simple logical test?
+
 '''
 The IF function in Excel is used to create a logical test and return different values based on whether the test is TRUE or FALSE. The syntax for the IF function is =IF(logical_test, value_if_true, value_if_false).
 
@@ -233,6 +247,7 @@ The completed function will look like this: =IF(A1>10, "Yes", "No"). This tells 
 '''
 
 What does the CONCATENATE function do, and how is it used?
+
 '''
 The CONCATENATE function in Excel is used to join different pieces of text together or combine values from several cells into one cell. It can join up to 30 values together and returns the result as text.
 
@@ -247,6 +262,7 @@ The TEXTJOIN function in Excel 2016 or later joins a range of strings using a de
 '''
 
 Explain the function of the LEFT function in Excel.
+
 '''
 The LEFT function in Excel is used to extract a specified number of characters from the beginning (left) of a text string1. The syntax of the LEFT function is =LEFT(text, [num_chars]), where:
 
@@ -259,6 +275,7 @@ Please note that the LEFT function in Excel should be used for extracting charac
 '''
 
 How do you use the RIGHT function to extract characters from a text string?
+
 '''
 The RIGHT function in Excel is used to extract a specified number of characters from the end (right side) of a given text string. Here’s how you can use it:
 
@@ -277,6 +294,7 @@ Please note that if you do not specify the number of characters to extract, it w
 '''
 
 What is the purpose of the LEN function, and how do you use it?
+
 '''
 The LEN function in Excel is used to calculate the length of a given text string. It counts the number of characters in the text, including alphabets, numbers, special characters, non-printable characters, and all spaces.
 
@@ -295,6 +313,7 @@ Please note that if the text is an empty string (“ ”) or a reference to an e
 '''
 
 How can you use the VLOOKUP function to search for data in a table?
+
 '''
 The VLOOKUP function in Excel is used to find things in a table or a range by row1. It’s very useful when you need to look up a value in a table based on some reference information. Here’s how you can use it:
 
@@ -317,6 +336,7 @@ Remember, if your lookup value is not in the first column of your table array or
 '''
 
 What does the HLOOKUP function do, and when is it used?
+
 '''
 The HLOOKUP function in Excel performs a horizontal search across a sorted data table to find a match with the lookup value. It searches across the topmost row for the look-up value and then moves down to retrieve data from the specified row. In HLOOKUP, the H stands for Horizontal, which we use when the lookup table is arranged horizontally.
 
@@ -333,6 +353,7 @@ Please note that if your lookup value is not in the first row of your table arra
 '''
 
 Explain the function of the DATE function in Excel.
+
 '''
 The DATE function in Excel is used to create a valid date from individual year, month, and day components. The syntax of the DATE function is =DATE(year, month, day), where:
 
@@ -346,6 +367,7 @@ Please note that the DATE function actually returns a serial number and not a fo
 '''
 
 How do you use the NOW function to display the current date and time?
+
 '''
 The NOW function in Excel is used to display the current system date and time. It’s a volatile function, which means it updates every time when a recalculation is done. Here’s how you can use it:
 
@@ -360,6 +382,7 @@ Please note that when you enter the NOW function in a cell, it will convert the 
 '''
 
 What is the purpose of the TEXT function in Excel?
+
 '''
 The TEXT function in Excel is used to convert numbers to text within a spreadsheet. Essentially, the function will convert a numeric value into a text string. The syntax of the TEXT function is =TEXT(value, format_text), where:
 
@@ -372,6 +395,7 @@ Please note that although you can use the TEXT function to change formatting, it
 '''
 
 How do you use the SUMIF function to sum values based on a condition?
+
 '''
 The SUMIF function in Excel is used to sum the values in a range that meet criteria that you specify. The syntax of the SUMIF function is =SUMIF(range, criteria, [sum_range]), where:
 
@@ -387,6 +411,7 @@ To sum cells based on multiple criteria, see SUMIFS function.
 '''
 
 What is the COUNTIF function, and when is it used?
+
 '''
 The COUNTIF function in Excel is used to count the number of cells in a range that meet a specific criterion. The syntax of the COUNTIF function is =COUNTIF(range, criteria), where:
 
@@ -399,6 +424,7 @@ The COUNTIF function is used when you need to count cells that meet a certain co
 '''
 
 Explain the function of the AVERAGEIF function in Excel.
+
 '''
 The AVERAGEIF function in Excel calculates the average (arithmetic mean) of all the cells in a range that meet a given criteria. The syntax of the AVERAGEIF function is =AVERAGEIF(range, criteria, [average_range]), where:
 
@@ -412,6 +438,7 @@ Please note that if no cells in the range meet the criteria, AVERAGEIF returns t
 '''
 
 How can you use the IFERROR function to handle errors in Excel?
+
 '''
 The IFERROR function in Excel is used to handle errors that might arise when a formula is evaluated. It returns a specified value if a formula evaluates to an error; otherwise, it returns the result of the formula.
 
@@ -426,6 +453,7 @@ The IFERROR function can handle many types of errors like #NUM!, #VALUE!, #REF!,
 '''
 
 What is the purpose of the ROUND function, and how do you use it?
+
 '''
 The ROUND function in Excel is used to round a number to a specified number of digits. The syntax of the ROUND function is =ROUND(number, num_digits), where:
 
@@ -438,6 +466,7 @@ Please note that if num_digits is greater than 0 (zero), then the number is roun
 '''
 
 How do you use the CONCATENATE function to join text from multiple cells?
+
 '''
 The CONCATENATE function in Excel is used to join two or more text strings into one text string. Here’s how you can use it:
 
@@ -455,6 +484,7 @@ Please note that as of Excel 2016, the CONCATENATE function has been replaced wi
 '''
 
 What is the difference between the AND and OR functions in Excel?
+
 '''
 The AND and OR functions in Excel are both logical functions that return TRUE or FALSE based on the conditions you specify.
 
